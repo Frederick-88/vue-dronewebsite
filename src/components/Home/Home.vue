@@ -25,9 +25,9 @@
               Best quality Drone for your daily life
             </h1>
             <h5 class="text-white mt-4">
-              Effects present letters inquiry no an removed or friends. Desire
-              behind latter me though in. Supposing shameless am engrossed
-              itatibus additions.
+              As the market leader in easy-to-fly drones and aerial photography
+              systems, Azur Drones' quadcopters like the Phantom are the
+              standard in consumer drone technology.
             </h5>
             <a href="#section2" class="btn bg-white mt-4">
               See More
@@ -95,16 +95,11 @@
     </div>
 
     <!-- Section 3 -->
-    <div class="mx-5 mt-5">
-      <h2 class="font-weight-bold text-center mb-4">Our Awesome Products</h2>
-      <carousel :items="3" :nav="false">
-        <div class="bg-danger">Hi this is 1</div>
-        <div class="bg-info">Hi this is 2</div>
-        <div class="bg-warning">Hi this is 3</div>
-        <div class="bg-success">Hi this is 4</div>
-        <div class="bg-primary">Hi this is 5</div>
-      </carousel>
-    </div>
+    <CarouselPage />
+
+    <!-- Section 4 -->
+    <h1>Choose us</h1>
+    <i class="flaticon-photography"></i>
   </div>
 </template>
 
@@ -112,12 +107,12 @@
 // @ is an alias to /src
 import navImage from "../../assets/logo-white.png";
 import backgroundImage from "../../assets/bg.jpg";
-import carousel from "vue-owl-carousel";
+import CarouselPage from "./Carousel";
 
 export default {
   name: "Home",
   components: {
-    carousel,
+    CarouselPage,
   },
   data() {
     return {
