@@ -1,9 +1,13 @@
 <template>
   <div>
-    <b-nav>
-      <img :src="image" alt="" />
-      <b-nav-item active><router-link to="/">Home</router-link></b-nav-item>
-      <b-nav-item><router-link to="/about">About</router-link></b-nav-item>
+    <b-nav class="mx-5">
+      <img :src="image" alt="navimage" class="nav-image" />
+      <div class="ml-auto align-self-center">
+        <router-link class="navlinks mr-3" to="/">Home</router-link>
+        <router-link class="navlinks mr-3" to="/about">Products</router-link>
+        <router-link class="navlinks mr-3" to="/about">Reviews</router-link>
+        <router-link class="navlinks" to="/about">About</router-link>
+      </div>
     </b-nav>
   </div>
 </template>
@@ -15,10 +19,18 @@ export default {
   components: {},
   data() {
     return {
-      image: navImage,
+      image: navImage
     };
-  },
+  }
 };
 </script>
 
-<style></style>
+<style scoped>
+.nav-image {
+  width: 20rem;
+}
+.navlinks {
+  color: #2c3e50;
+  font-weight: 700;
+}
+</style>
