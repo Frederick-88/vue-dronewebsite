@@ -1,6 +1,7 @@
 <template>
-  <div class="mx-5 my-5">
+  <div style="margin: 6rem 3rem">
     <h2 class="font-weight-bold text-center mb-4">Our Awesome Products</h2>
+
     <carousel :items="4" :nav="false" :loop="true" style="cursor:pointer;">
       <div>
         <div class="card mx-4" style="border: 2px solid rgba(0, 0, 0, 0.125);">

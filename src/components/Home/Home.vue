@@ -24,7 +24,7 @@
             <h1 class="display-4 title-fx text-white">
               Best quality Drone for your daily life
             </h1>
-            <h5 class="text-white mt-4">
+            <h5 class="text-white mt-4 pr-5">
               As the market leader in easy-to-fly drones and aerial photography
               systems, Azur Drones' quadcopters like the Phantom are the
               standard in consumer drone technology.
@@ -98,8 +98,38 @@
     <CarouselPage />
 
     <!-- Section 4 -->
-    <h1>Choose us</h1>
-    <i class="flaticon-photography"></i>
+    <FeaturesPage />
+
+    <!-- Section 5 -->
+    <div
+      class="subscribe-bg"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
+      <div class="text-center">
+        <h2 class="font-weight-bold mb-3 text-white">
+          Subscribe To Get Updates
+        </h2>
+        <p class="text-white mb-5">
+          Prepared is me marianne pleasure likewise debating. Wonder an unable
+          except better stairs do ye admire. His secure called esteem praise.
+        </p>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your email address..."
+          />
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="button-addon2">
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <FooterSection />
   </div>
 </template>
 
@@ -108,11 +138,15 @@
 import navImage from "../../assets/logo-white.png";
 import backgroundImage from "../../assets/bg.jpg";
 import CarouselPage from "./Carousel";
+import FeaturesPage from "./Features";
+import FooterSection from "./Footer";
 
 export default {
   name: "Home",
   components: {
     CarouselPage,
+    FeaturesPage,
+    FooterSection,
   },
   data() {
     return {
@@ -175,6 +209,13 @@ export default {
 .navlinks {
   color: white;
   font-weight: 700;
+}
+.subscribe-bg {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 4rem 0;
+  padding: 2rem 20rem;
 }
 .title-fx {
   font-family: "Russo One", sans-serif;
