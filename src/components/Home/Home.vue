@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- This is the Section 1, the full view height -->
     <div class="home" :style="{ backgroundImage: `url(${backgroundImage})` }">
       <b-nav class="mx-5">
         <img :src="image" alt="navimage" class="nav-image" />
@@ -13,28 +14,97 @@
       <div class="border-top mx-3">
         <div class="row" style="margin-top: 7rem;">
           <div class="col-6">
-            <img src="../../assets/mydrone1.png" alt="image" class="drone-animation-fx" />
+            <img
+              src="../../assets/mydrone1.png"
+              alt="image"
+              class="drone-animation-fx"
+            />
           </div>
           <div class="col-6 pl-4">
-            <h1 class="display-4 title-fx text-white">Best quality Drone for your daily life</h1>
+            <h1 class="display-4 title-fx text-white">
+              Best quality Drone for your daily life
+            </h1>
             <h5 class="text-white mt-4">
-              Effects present letters inquiry no an removed or friends. Desire behind
-              latter me though in. Supposing
-              shameless am engrossed itatibus additions.
+              Effects present letters inquiry no an removed or friends. Desire
+              behind latter me though in. Supposing shameless am engrossed
+              itatibus additions.
             </h5>
-            <button class="btn bg-white mt-4">
+            <a href="#section2" class="btn bg-white mt-4">
               See More
               <i class="fas fa-arrow-alt-circle-down ml-2"></i>
-            </button>
-            <button>Tes</button>
+            </a>
           </div>
         </div>
       </div>
-      <svg class="bottom-fx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,96L720,320L1440,96L1440,320L720,320L0,320Z" />
+      <svg
+        class="bottom-fx"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L720,320L1440,96L1440,320L720,320L0,320Z"
+        />
       </svg>
     </div>
-    <div class="mt-5">Tes</div>
+
+    <!-- Section 2 -->
+    <div id="section2" class="mt-5 text-center">
+      <h2 class="font-weight-bold">Why AzurDrones Is Best</h2>
+      <div style="margin: 1.5rem 10rem;">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-undo-alt fa-3x icon-fx"></i>
+                <h5 class="mt-3 font-weight-bold">1 Year Warranty</h5>
+                <p>
+                  Viewing hastily or written dearest elderly up weather.
+                  direction so sweetness, Donec dearest justo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-shipping-fast fa-3x icon-fx"></i>
+                <h5 class="mt-3 font-weight-bold">Free Delivery</h5>
+                <p>
+                  Viewing hastily or written dearest elderly up weather.
+                  direction so sweetness, Donec dearest justo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-headset fa-3x icon-fx"></i>
+                <h5 class="mt-3 font-weight-bold">Dedicated Support</h5>
+                <p>
+                  Viewing hastily or written dearest elderly up weather.
+                  direction so sweetness, Donec dearest justo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="mx-5 mt-5">
+      <h2 class="font-weight-bold text-center mb-4">Our Awesome Products</h2>
+      <carousel :items="3" :nav="false">
+        <div class="bg-danger">Hi this is 1</div>
+        <div class="bg-info">Hi this is 2</div>
+        <div class="bg-warning">Hi this is 3</div>
+        <div class="bg-success">Hi this is 4</div>
+        <div class="bg-primary">Hi this is 5</div>
+      </carousel>
+    </div>
   </div>
 </template>
 
@@ -42,16 +112,19 @@
 // @ is an alias to /src
 import navImage from "../../assets/logo-white.png";
 import backgroundImage from "../../assets/bg.jpg";
+import carousel from "vue-owl-carousel";
 
 export default {
   name: "Home",
-  components: {},
+  components: {
+    carousel,
+  },
   data() {
     return {
       image: navImage,
-      backgroundImage: backgroundImage
+      backgroundImage: backgroundImage,
     };
-  }
+  },
 };
 </script>
 
@@ -95,6 +168,11 @@ export default {
   height: 94.7vh;
   background-size: cover;
   background-position: center;
+}
+.icon-fx {
+  background: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-image {
   width: 20rem;
