@@ -121,7 +121,8 @@
           />
           <div class="input-group-append">
             <button class="btn btn-secondary" type="button" id="button-addon2">
-              Button
+              Subscribe
+              <i class="fas fa-paper-plane"></i>
             </button>
           </div>
         </div>
