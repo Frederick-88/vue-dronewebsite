@@ -155,6 +155,9 @@ export default {
       backgroundImage: backgroundImage,
     };
   },
+  mounted() {
+    console.log("this is rendered in the first place");
+  },
 };
 </script>
 
