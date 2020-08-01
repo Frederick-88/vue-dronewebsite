@@ -175,7 +175,7 @@ export default {
     },
   },
   mounted() {
-    console.log("this is rendered in the first place");
+    window.console.log("this is a log from mounted(useEffect in React)");
   },
 };
 </script>
@@ -237,8 +237,12 @@ export default {
   width: 20rem;
 }
 .navlinks {
-  color: white;
+  color: rgb(200, 200, 200);
   font-weight: 700;
+}
+.navlinks:hover {
+  color: white;
+  text-decoration: none;
 }
 .subscribe-bg {
   background-size: cover;
