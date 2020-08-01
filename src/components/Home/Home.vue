@@ -6,9 +6,10 @@
         <img :src="image" alt="navimage" class="nav-image" />
         <div class="ml-auto align-self-center">
           <router-link class="navlinks mr-3" to="/">Home</router-link>
-          <router-link class="navlinks mr-3" to="/about">Products</router-link>
-          <router-link class="navlinks mr-3" to="/about">Reviews</router-link>
-          <router-link class="navlinks" to="/about">About</router-link>
+          <a class="navlinks mr-3" href="#products-section3">Products</a>
+          <a class="navlinks mr-3" href="#features-section4">Features</a>
+          <router-link class="navlinks mr-3" to="/reviews">Reviews</router-link>
+          <a class="navlinks mr-3" href="#footer-section6">About</a>
         </div>
       </b-nav>
       <div class="border-top mx-3">
@@ -23,7 +24,11 @@
               systems, Azur Drones' quadcopters like the Phantom are the
               standard in consumer drone technology.
             </h5>
-            <a href="#section2" class="btn bg-white mt-4">
+            <a
+              href="#section2"
+              class="btn azur-btn-primary mt-4"
+              style="position:relative; z-index:10"
+            >
               See More
               <i class="fas fa-arrow-alt-circle-down ml-2"></i>
             </a>
@@ -81,10 +86,10 @@
     </div>
 
     <!-- Section 3 -->
-    <CarouselPage />
+    <CarouselPage id="products-section3" />
 
     <!-- Section 4 -->
-    <FeaturesPage />
+    <FeaturesPage id="features-section4" />
 
     <!-- Section 5 -->
     <div class="subscribe-bg" :style="{ backgroundImage: `url(${backgroundImage})` }">
@@ -107,7 +112,7 @@
     </div>
 
     <!-- Footer -->
-    <FooterSection />
+    <FooterSection id="footer-section6" />
   </div>
 </template>
 
@@ -139,6 +144,13 @@ export default {
 </script>
 
 <style>
+.azur-btn-primary {
+  background-color: white;
+}
+.azur-btn-primary:hover {
+  background-color: black;
+  color: white;
+}
 .bottom-fx {
   z-index: 1;
   position: absolute;

@@ -2,7 +2,7 @@
   <div style="margin: 6rem 3rem">
     <h2 class="font-weight-bold text-center mb-4">Our Awesome Products</h2>
 
-    <carousel :items="4" :nav="false" :loop="true" style="cursor:pointer;">
+    <carousel :items="4" :nav="false">
       <div>
         <div class="card mx-4" style="border: 2px solid rgba(0, 0, 0, 0.125);">
           <img
@@ -20,10 +20,10 @@
               <i class="fas fa-star" style="color:#56eb00;"></i>
             </div>
             <div class="d-flex d-row mt-4 justify-content-center">
-              <h4 class="icon-fx font-weight-bold">
-                $136
-              </h4>
-              <h5 class="text-secondary ml-3"><del>$180</del></h5>
+              <h4 class="icon-fx font-weight-bold">$136</h4>
+              <h5 class="text-secondary ml-3">
+                <del>$180</del>
+              </h5>
             </div>
             <h5 class="font-weight-bold text-center">Global Hawk</h5>
           </div>
@@ -47,10 +47,10 @@
               <i class="fas fa-star text-secondary"></i>
             </div>
             <div class="d-flex d-row mt-4 justify-content-center">
-              <h4 class="icon-fx font-weight-bold">
-                $112
-              </h4>
-              <h5 class="text-secondary ml-3"><del>$150</del></h5>
+              <h4 class="icon-fx font-weight-bold">$112</h4>
+              <h5 class="text-secondary ml-3">
+                <del>$150</del>
+              </h5>
             </div>
             <h5 class="font-weight-bold text-center">Pioneer</h5>
           </div>
@@ -73,10 +73,10 @@
               <i class="fas fa-star" style="color:#56eb00;"></i>
             </div>
             <div class="d-flex d-row mt-4 justify-content-center">
-              <h4 class="icon-fx font-weight-bold">
-                $136
-              </h4>
-              <h5 class="text-secondary ml-3"><del>$180</del></h5>
+              <h4 class="icon-fx font-weight-bold">$136</h4>
+              <h5 class="text-secondary ml-3">
+                <del>$180</del>
+              </h5>
             </div>
             <h5 class="font-weight-bold text-center">Shadow Air Force</h5>
           </div>
@@ -99,10 +99,10 @@
               <i class="fas fa-star" style="color:#56eb00;"></i>
             </div>
             <div class="d-flex d-row mt-4 justify-content-center">
-              <h4 class="icon-fx font-weight-bold">
-                $198
-              </h4>
-              <h5 class="text-secondary ml-3"><del>$235</del></h5>
+              <h4 class="icon-fx font-weight-bold">$198</h4>
+              <h5 class="text-secondary ml-3">
+                <del>$235</del>
+              </h5>
             </div>
             <h5 class="font-weight-bold text-center">Fire Scout</h5>
           </div>
@@ -125,15 +125,22 @@
               <i class="fas fa-star" style="color:#56eb00;"></i>
             </div>
             <div class="d-flex d-row mt-4 justify-content-center">
-              <h4 class="icon-fx font-weight-bold">
-                $136
-              </h4>
-              <h5 class="text-secondary ml-3"><del>$180</del></h5>
+              <h4 class="icon-fx font-weight-bold">$136</h4>
+              <h5 class="text-secondary ml-3">
+                <del>$180</del>
+              </h5>
             </div>
             <h5 class="font-weight-bold text-center">Grey Eagle</h5>
           </div>
         </div>
       </div>
+      <!-- Default Button from Vue Owl Carousel -->
+      <template slot="next">
+        <i class="fas fa-arrow-alt-circle-right fa-2x" style="cursor:pointer;"></i>
+      </template>
+      <template slot="prev">
+        <i class="fas fa-arrow-alt-circle-left fa-2x mb-2" style="cursor:pointer;"></i>
+      </template>
     </carousel>
   </div>
 </template>
@@ -144,8 +151,8 @@ import carousel from "vue-owl-carousel";
 export default {
   name: "CarouselPage",
   components: {
-    carousel,
-  },
+    carousel
+  }
 };
 </script>
 

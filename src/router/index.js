@@ -4,7 +4,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import Home from "../components/Home/Home";
-import About from "../components/About/About";
+import ReviewsPage from "../components/Reviews/Reviews";
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
@@ -17,9 +17,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
+    path: "/reviews",
+    name: "Reviews",
+    component: ReviewsPage,
   },
 ];
 

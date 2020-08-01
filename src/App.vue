@@ -6,6 +6,9 @@
 </template>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .app {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;

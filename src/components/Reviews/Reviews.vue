@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <div>
     <Navbar />
-    <h1>This is an about page</h1>
+    <h1>This is Reviews page</h1>
     <button class="btn button-fx text-white">Button</button>
   </div>
 </template>
@@ -10,7 +10,7 @@
 import Navbar from "../Navbar/Navbar";
 
 export default {
-  name: "About",
+  name: "Reviews",
   components: {
     Navbar
   }

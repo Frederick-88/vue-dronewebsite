@@ -4,9 +4,10 @@
       <img :src="image" alt="navimage" class="nav-image" />
       <div class="ml-auto align-self-center">
         <router-link class="navlinks mr-3" to="/">Home</router-link>
-        <router-link class="navlinks mr-3" to="/about">Products</router-link>
-        <router-link class="navlinks mr-3" to="/about">Reviews</router-link>
-        <router-link class="navlinks" to="/about">About</router-link>
+        <router-link class="navlinks mr-3" to="/">Products</router-link>
+        <router-link class="navlinks mr-3" to="/">Features</router-link>
+        <router-link class="navlinks mr-3" to="/reviews">Reviews</router-link>
+        <router-link class="navlinks" to="/">About</router-link>
       </div>
     </b-nav>
   </div>

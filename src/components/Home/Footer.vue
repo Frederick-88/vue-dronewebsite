@@ -26,7 +26,7 @@
     <div class="mt-4 border-top">
       <p class="text-center pt-3 text-secondary">
         Copyright © 2020. All rights reserved by
-        <span class="icon-fx">ChenFrederick</span>
+        <span class="icon-fx">Chen Frederick</span>
       </p>
     </div>
   </div>
