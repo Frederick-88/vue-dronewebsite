@@ -15,10 +15,16 @@
       <div class="border-top mx-3">
         <div class="row" style="margin-top: 7rem;">
           <div class="col-6">
-            <img src="../../assets/mydrone1.png" alt="image" class="drone-animation-fx" />
+            <img
+              src="../../assets/mydrone1.png"
+              alt="image"
+              class="drone-animation-fx"
+            />
           </div>
           <div class="col-6 pl-4">
-            <h1 class="display-4 title-fx text-white">Best quality Drone for your daily life</h1>
+            <h1 class="display-4 title-fx text-white">
+              Best quality Drone for your daily life
+            </h1>
             <h5 class="text-white mt-4 pr-5">
               As the market leader in easy-to-fly drones and aerial photography
               systems, Azur Drones' quadcopters like the Phantom are the
@@ -35,8 +41,16 @@
           </div>
         </div>
       </div>
-      <svg class="bottom-fx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,96L720,320L1440,96L1440,320L720,320L0,320Z" />
+      <svg
+        class="bottom-fx"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L720,320L1440,96L1440,320L720,320L0,320Z"
+        />
       </svg>
     </div>
 
@@ -92,17 +106,31 @@
     <FeaturesPage id="features-section4" />
 
     <!-- Section 5 -->
-    <div class="subscribe-bg" :style="{ backgroundImage: `url(${backgroundImage})` }">
+    <div
+      class="subscribe-bg"
+      :style="{ backgroundImage: `url(${backgroundImage})` }"
+    >
       <div class="text-center">
-        <h2 class="font-weight-bold mb-3 text-white">Subscribe To Get Updates</h2>
+        <h2 class="font-weight-bold mb-3 text-white">
+          Subscribe To Get Updates
+        </h2>
         <p class="text-white mb-5">
           Prepared is me marianne pleasure likewise debating. Wonder an unable
           except better stairs do ye admire. His secure called esteem praise.
         </p>
         <div class="input-group">
-          <input type="text" class="form-control py-4" placeholder="Your email address..." />
+          <input
+            type="text"
+            class="form-control py-4"
+            placeholder="Your email address..."
+          />
           <div class="input-group-append">
-            <button class="btn btn-secondary" type="button" id="button-addon2">
+            <button
+              @click="displayToast"
+              class="btn btn-secondary"
+              type="button"
+              id="button-addon2"
+            >
               Subscribe
               <i class="fas fa-paper-plane"></i>
             </button>
@@ -129,17 +157,26 @@ export default {
   components: {
     CarouselPage,
     FeaturesPage,
-    FooterSection
+    FooterSection,
   },
   data() {
     return {
       image: navImage,
-      backgroundImage: backgroundImage
+      backgroundImage: backgroundImage,
     };
+  },
+  methods: {
+    displayToast() {
+      this.$toast.info("Coming Soon for Subscribe Feature! Stay Tune.", {
+        timeout: 3000,
+        // the icon is available for fontawesome too!
+        icon: "fab fa-vuejs",
+      });
+    },
   },
   mounted() {
     console.log("this is rendered in the first place");
-  }
+  },
 };
 </script>
 

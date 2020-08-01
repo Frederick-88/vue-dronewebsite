@@ -1,25 +1,29 @@
 <template>
-  <div class="mx-1 footer-bg" :style="{ backgroundImage: `url(${footerImage})` }">
+  <div
+    class="mx-1 footer-bg"
+    :style="{ backgroundImage: `url(${footerImage})` }"
+  >
     <div class="text-center">
       <img :src="navImage" alt="..." style="width:20rem" />
     </div>
-    <p
-      class="text-center text-secondary"
-      style="margin:0 12rem"
-    >As the market leader in easy-to-fly drones and aerial photography systems, Azur Drones' quadcopters like the Phantom are the standard in consumer drone technology.</p>
+    <p class="text-center text-secondary" style="margin:0 12rem">
+      As the market leader in easy-to-fly drones and aerial photography systems,
+      Azur Drones' quadcopters like the Phantom are the standard in consumer
+      drone technology.
+    </p>
     <div class="d-flex justify-content-center mt-4">
-      <button class="btn btn-outline-success mr-3">
+      <button @click="displayToast" class="btn btn-outline-success mr-3">
         <i class="fab fa-whatsapp fa-lg" />
       </button>
 
-      <button class="btn btn-outline-instagram mr-3">
+      <button @click="displayToast" class="btn btn-outline-instagram mr-3">
         <i class="fab fa-instagram fa-lg" />
       </button>
-      <button class="btn btn-outline-primary mr-3">
+      <button @click="displayToast" class="btn btn-outline-primary mr-3">
         <i class="fab fa-facebook-square fa-lg" />
       </button>
 
-      <button class="btn btn-outline-danger">
+      <button @click="displayToast" class="btn btn-outline-danger">
         <i class="far fa-envelope fa-lg" />
       </button>
     </div>
@@ -41,9 +45,18 @@ export default {
   data() {
     return {
       navImage: navImage,
-      footerImage: footerImage
+      footerImage: footerImage,
     };
-  }
+  },
+  methods: {
+    displayToast() {
+      this.$toast.success("You can check the github of Frederick-88 : )", {
+        timeout: 5000,
+        // the icon is available for fontawesome too!
+        icon: "fab fa-vuejs",
+      });
+    },
+  },
 };
 </script>
 
