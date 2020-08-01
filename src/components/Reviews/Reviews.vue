@@ -4,7 +4,7 @@
     <div style="border-top:2px solid #2c3e50;">
       <div class="text-center" style="margin:2rem 16rem">
         <h3 class="icon-fx font-weight-bold">Review Form</h3>
-        <h5 class="mt-4">1. Pick Your Character</h5>
+        <h5 class="mt-4 font-weight-bold">1. Pick Your Character</h5>
         <div class="row d-flex justify-content-center">
           <div
             v-for="(character, index) in characters"
@@ -22,7 +22,27 @@
             />
           </div>
         </div>
+        <div>
+          <h5 class="mt-4 font-weight-bold">2. Fill This Form</h5>
+          <p class="mt-3 mb-1">Title of Review</p>
+          <input
+            name="title"
+            type="text"
+            class="w-75 py-2 px-3"
+            placeholder="Title of Review"
+            v-model="dataInput.title"
+          />
+          <p class="mt-3 mb-1">Description of Review</p>
+          <input
+            name="description"
+            type="text"
+            class="w-75 py-2 px-3"
+            placeholder="Share with us how you felt on AzurDrones' Products!"
+            v-model="dataInput.description"
+          />
+        </div>
       </div>
+
       <div class="text-center" style="margin:2rem 16rem">
         <h3 class="icon-fx font-weight-bold">The Review Data belongs here</h3>
         <button class="btn button-fx text-white">Button</button>
@@ -57,6 +77,10 @@ export default {
             "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/2.jpg",
         },
       ],
+      dataInput: {
+        title: "",
+        description: "",
+      },
     };
   },
   methods: {

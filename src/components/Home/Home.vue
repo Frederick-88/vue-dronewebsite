@@ -9,7 +9,7 @@
           <a class="navlinks mr-3" href="#products-section3">Products</a>
           <a class="navlinks mr-3" href="#features-section4">Features</a>
           <router-link class="navlinks mr-3" to="/reviews">Reviews</router-link>
-          <a class="navlinks mr-3" href="#footer-section6">About</a>
+          <a class="navlinks" href="#footer-section6">About</a>
         </div>
       </b-nav>
       <div class="border-top mx-3">
