@@ -188,6 +188,9 @@ export default {
         // the icon is available for fontawesome too!
         icon: "fab fa-vuejs",
       });
+
+      // Reset the form, the code structure below resetted by Prettier.
+      (this.dataInput.headline = ""), (this.dataInput.description = "");
     },
   },
 };
