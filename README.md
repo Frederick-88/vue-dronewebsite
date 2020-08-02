@@ -4,6 +4,7 @@
 
 ### Combined with :
 
+- Axios for Promise Requests towards backend API. (In Review Page)
 - Interactive Toast Alerts
 - Interactive Animations & Gradients
 - Vue Owl Carousel

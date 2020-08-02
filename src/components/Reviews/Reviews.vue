@@ -32,7 +32,8 @@
               type="text"
               class="w-75 py-2 px-3"
               placeholder="Headline of Review"
-              v-model="dataInput.title"
+              v-model="dataInput.headline"
+              required
             />
             <p class="mt-3 mb-1">Description of Review</p>
             <input
@@ -41,6 +42,7 @@
               class="w-75 py-2 px-3"
               placeholder="Share with us how you felt on AzurDrones' Products!"
               v-model="dataInput.description"
+              required
             />
           </div>
           <button type="submit" class="btn button-fx text-white mt-4">
@@ -133,7 +135,7 @@ export default {
         },
       ],
       dataInput: {
-        Headline: "",
+        headline: "",
         description: "",
       },
       // From Axios
@@ -147,7 +149,45 @@ export default {
       this.selectedCharacter = selected;
     },
     submitReview() {
-      // let inputReview = {};
+      // To Select Character Gender's Image That will be posted.
+      let ImageCharacter = "";
+      if (this.selectedCharacter === "Man") {
+        ImageCharacter =
+          "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg";
+      } else {
+        ImageCharacter =
+          "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/2.jpg";
+      }
+
+      let inputReview = {
+        // just ignore years and status, its not needed in backend.
+        imageBook: ImageCharacter,
+        bookTitle: this.dataInput.headline,
+        years: 2020,
+        bookNumber: this.dataInput.description,
+        status: true,
+      };
+
+      // Axios Post to Backend
+      axios
+        .post(`${url}/library/post`, inputReview)
+        .then((res) => {
+          console.log(res);
+          console.log(inputReview);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+
+      // Automatically update the component for a live update like reducer in ReactJS
+      this.dataReview = [...this.dataReview, inputReview];
+
+      // Toast Alert
+      this.$toast.info("Your Review has been Posted!", {
+        timeout: 4000,
+        // the icon is available for fontawesome too!
+        icon: "fab fa-vuejs",
+      });
     },
   },
 };
