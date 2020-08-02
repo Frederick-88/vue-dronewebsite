@@ -1,24 +1,12 @@
-# vue-dronewebsite
+## AzurDrones
 
-## Project setup
-```
-npm install
-```
+### Made with Vue.js.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Combined with :
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Interactive Toast Alerts
+- Interactive Animations & Gradients
+- Vue Owl Carousel
+- Getwaves.com = for a better Homepage
+- Vue Routers
+- Bootstrap & Fontawesome for Icons
