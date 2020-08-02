@@ -15,11 +15,7 @@
             }"
             @click="updateSelectedCharacter(character.characterGender)"
           >
-            <img
-              :src="character.characterImage"
-              alt="char-image"
-              class="w-100"
-            />
+            <img :src="character.characterImage" alt="char-image" class="w-100" />
           </div>
         </div>
         <div>
@@ -45,6 +41,51 @@
 
       <div class="text-center" style="margin:2rem 16rem">
         <h3 class="icon-fx font-weight-bold">The Review Data belongs here</h3>
+        <div class="row mb-4">
+          <div class="col-4 mt-4">
+            <div class="special-card">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg"
+                  alt="char-img"
+                  class="rounded-circle"
+                  style
+                />
+              </div>
+              <div class="card">
+                <div class="card-body pt-5">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p>From: AzureBay77</p>
+                  <p
+                    class="card-text"
+                  >With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 mt-4">
+            <div class="special-card">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg"
+                  alt="char-img"
+                  class="rounded-circle"
+                  style
+                />
+              </div>
+              <div class="card">
+                <div class="card-body pt-5">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p>From: AzureBay77</p>
+                  <p
+                    class="card-text"
+                  >With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <button class="btn button-fx text-white">Button</button>
       </div>
     </div>
@@ -60,7 +101,7 @@ export default {
   name: "Reviews",
   components: {
     Navbar,
-    Footer,
+    Footer
   },
   data() {
     return {
@@ -69,25 +110,25 @@ export default {
         {
           characterGender: "Man",
           characterImage:
-            "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg",
+            "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg"
         },
         {
           characterGender: "Women",
           characterImage:
-            "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/2.jpg",
-        },
+            "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/2.jpg"
+        }
       ],
       dataInput: {
         title: "",
-        description: "",
-      },
+        description: ""
+      }
     };
   },
   methods: {
     updateSelectedCharacter(data) {
       this.selectedCharacter = data;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -98,5 +139,14 @@ export default {
 }
 .activeBorder {
   border: 2px solid rgba(44, 62, 80, 1);
+}
+.special-card img {
+  width: 6rem;
+  border: 3px solid gray;
+  margin-bottom: -2.5rem;
+  z-index: 1;
+}
+.special-card .card {
+  border: 3px solid gray;
 }
 </style>
