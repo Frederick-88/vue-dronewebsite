@@ -108,7 +108,7 @@
               type="button"
               id="button-addon2"
             >
-              Subscribea
+              Subscribe
               <i class="fas fa-paper-plane"></i>
             </button>
           </div>
