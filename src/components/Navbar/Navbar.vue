@@ -7,7 +7,7 @@
         <router-link class="navlinks mr-3" to="/">Products</router-link>
         <router-link class="navlinks mr-3" to="/">Features</router-link>
         <router-link class="navlinks mr-3" to="/reviews">Reviews</router-link>
-        <router-link class="navlinks" to="/">About</router-link>
+        <router-link class="navlinks" to="/">Abouat</router-link>
       </div>
     </b-nav>
   </div>
