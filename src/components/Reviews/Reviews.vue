@@ -124,7 +124,7 @@ export default {
       selectedCharacter: "Man",
       characters: [
         {
-          characterGender: "Man",
+          characterGender: "Maan",
           characterImage:
             "http://geniusdevs.com/themeforest/prolab/probucket/assets/images/testimonialimage/1.jpg",
         },
