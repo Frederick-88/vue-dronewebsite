@@ -116,7 +116,7 @@ export default {
       .catch((error) => {
         console.log(error);
       });
-    // try to make loading page in it.
+    // try to make loading page in it.a
     // .finally(() => (this.loadingDataReview = false));
   },
   data() {
