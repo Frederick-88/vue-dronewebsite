@@ -5,7 +5,7 @@
       <div class="text-center" style="margin:2rem 16rem">
         <form @submit.prevent="submitReview">
           <h3 class="icon-fx font-weight-bold">Review Form</h3>
-          <h5 class="mt-4 font-weight-bold">1. Pick Your Charaacter</h5>
+          <h5 class="mt-4 font-weight-bold">1. Pick Your Character</h5>
           <div class="row d-flex justify-content-center">
             <div
               v-for="(character, index) in characters"
