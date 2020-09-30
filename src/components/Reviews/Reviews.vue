@@ -60,10 +60,6 @@
             :key="index"
             class="col-4 mt-4"
           >
-            <!-- Try To Make Loading -->
-            <!-- <div v-if="loadingDataReview"><h1>Loading...</h1></div> -->
-            <!-- <div v-else>Not Loading...</div> -->
-
             <div class="special-card">
               <div class="d-flex justify-content-center">
                 <!-- In my backend, ImageBook = Image(At Here) -->
