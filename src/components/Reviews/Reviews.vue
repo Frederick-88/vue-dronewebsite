@@ -51,7 +51,7 @@
         </form>
       </div>
 
-      <!-- Review Data -->
+      <!-- Review Daata -->
       <div class="text-center" style="margin:2rem 16rem">
         <h3 class="icon-fx font-weight-bold">The Review Data belongs here</h3>
         <div class="row mb-4">
