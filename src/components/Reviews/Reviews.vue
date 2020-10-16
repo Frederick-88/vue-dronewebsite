@@ -62,7 +62,7 @@
           >
             <div class="special-card">
               <div class="d-flex justify-content-center">
-                <!-- In my backend, ImageBook = Image(At Here) -->
+                <!-- In my backend, ImageBook = aImage(At Here) -->
                 <img
                   :src="review.imageBook"
                   alt="char-img"
