@@ -134,13 +134,13 @@
           </div>
         </div>
       </div>
-      <!-- Default Button from Vue Owl Carousel -->
+      <!-- Default Button from Vue Owl Carousel
       <template slot="next">
         <i class="fas fa-arrow-alt-circle-right fa-2x" style="cursor:pointer;"></i>
       </template>
       <template slot="prev">
         <i class="fas fa-arrow-alt-circle-left fa-2x mb-2" style="cursor:pointer;"></i>
-      </template>
+      </template> -->
     </carousel>
   </div>
 </template>
@@ -151,8 +151,8 @@ import carousel from "vue-owl-carousel";
 export default {
   name: "CarouselPage",
   components: {
-    carousel
-  }
+    carousel,
+  },
 };
 </script>
 
