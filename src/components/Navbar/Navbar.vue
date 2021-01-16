@@ -20,9 +20,9 @@ export default {
   components: {},
   data() {
     return {
-      image: navImage
+      image: navImage,
     };
-  }
+  },
 };
 </script>
 
@@ -33,5 +33,8 @@ export default {
 .navlinks {
   color: #2c3e50;
   font-weight: 700;
+}
+.navlinks:hover {
+  color: #526f8b;
 }
 </style>
