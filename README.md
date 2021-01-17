@@ -10,4 +10,4 @@
 - Vue Owl Carousel
 - Getwaves.com = for a better Homepage
 - Vue Routers
-- Bootstrap & Fontawesome for Icons
+- Bootstrap & Font-awesome for Icons
